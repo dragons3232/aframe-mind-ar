@@ -1,6 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <a-scene>
+  <a-scene
+    mindar-image="imageTargetSrc: /card.mind; uiScanning: #scanning-overlay; uiLoading:no;"
+    color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+  >
     <a-assets>
       <img id="netpower" src="netpower.png" />
     </a-assets>
@@ -13,8 +19,12 @@
       />
     </a-entity>
 
-    <a-box position="0 -1 -2" rotation="0 30 0" material="src: netpower.png" />
-    <a-sky color="#ECECEC"></a-sky>
+    <a-box
+      position="0 -1 -2"
+      rotation="0 30 0"
+      material="src: netpower.png"
+      mindar-image-target="targetIndex: 0"
+    />
   </a-scene>
 </template>
 
