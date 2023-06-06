@@ -14,11 +14,12 @@
       <a-camera
         look-controls="enabled: true"
         cursor="fuse: false; rayOrigin: mouse;"
-        raycaster="near: 0; far: 10"
+        raycaster="near: 0; far: 10000"
       />
     </a-entity>
 
     <a-plane
+      onclick="alert('I was clicked')"
       color="blue"
       opaciy="0.5"
       position="0 0 0"
