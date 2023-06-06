@@ -1,5 +1,4 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <a-scene
     mindar-image="imageTargetSrc: /card.mind; uiScanning: #scanning-overlay; uiLoading:no;"
     color-space="sRGB"
@@ -42,6 +41,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
