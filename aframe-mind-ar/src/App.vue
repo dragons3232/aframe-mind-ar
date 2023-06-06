@@ -8,6 +8,7 @@
   >
     <a-assets>
       <img id="netpower" src="netpower.png" />
+      <img id="galaxy" src="galaxy.gif" />
     </a-assets>
 
     <a-entity id="camera" position="0 0 0" rotation="0 0 0">
@@ -20,12 +21,12 @@
 
     <a-plane
       onclick="alert('I was clicked')"
-      color="blue"
       opaciy="0.5"
       position="0 0 0"
       height="0.552"
       width="1"
       rotation="0 0 0"
+      material="shader:gif; src:#galaxy; transparent:true"
       mindar-image-target="targetIndex: 0"
     />
   </a-scene>
